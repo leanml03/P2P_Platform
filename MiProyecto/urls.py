@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',home),
     path('welcome/', welcome),
-    path('edad/<int:edad>',categoriaEdad)
+    path('edad/<int:edad>',categoriaEdad),
+    path('register/',register),
+    path('register/guardar-json/',guardar_json,name='guardar-json')
 ]
